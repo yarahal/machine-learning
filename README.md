@@ -26,4 +26,4 @@ Currently includes:
 
 ### Support Vector Machines
 
-![ezgif-6-84831651e60e](https://user-images.githubusercontent.com/65565946/126893695-91468489-c090-40d6-bc60-381da7778664.png)
+![ezgif-6-070e4540b3d5](https://user-images.githubusercontent.com/65565946/126898231-6a09298a-ee63-4e7c-a43b-78e1cebae76c.png)
