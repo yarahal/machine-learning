@@ -8,6 +8,7 @@ Currently includes:
 - Logistic Regression
 - Nearest Neighbor Classification
 - Support Vector Machines
+- Principal Components Analysis
 
 ## Requirements
 
