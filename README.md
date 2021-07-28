@@ -21,10 +21,20 @@ Currently includes:
 
 ![ezgif-6-a80edb50de90](https://user-images.githubusercontent.com/65565946/126893678-16c7ca8c-70c5-4650-ac71-22cb5a0f0c29.gif)
 
-### Nearest Neighbors
+### Nearest Neighbor Regression
 
-![ezgif-6-0bbc8378947a](https://user-images.githubusercontent.com/65565946/126893245-51161e51-2012-4b28-b8f6-a127c2cf2d1b.png)
+![knn_regression](https://user-images.githubusercontent.com/65565946/127392415-bf4f8fe3-fad4-415f-961a-a5dc3ba9fd30.png)
+
+### Nearest Neighbor Classification
+
+![knn_classification](https://user-images.githubusercontent.com/65565946/127392294-12d67e54-d010-4395-8a91-1643dcd84bd3.png)
 
 ### Support Vector Machines
 
-![ezgif-6-070e4540b3d5](https://user-images.githubusercontent.com/65565946/126898231-6a09298a-ee63-4e7c-a43b-78e1cebae76c.png)
+![svm](https://user-images.githubusercontent.com/65565946/127392069-874ac6c7-f859-41b0-8503-263797fa6437.png)
+
+### Decision Tree Classification
+
+![decision_tree](https://user-images.githubusercontent.com/65565946/127392479-1ede1293-a960-4952-9436-01da748bdeb9.png)
+
+
