@@ -9,10 +9,6 @@ Currently includes:
 - Support Vector Machines
 - Principal Components Analysis
 - Decision Trees
-- Random Forests
-- Gradient Boosting
-- K-Means Clustering
-- Neural Networks
 
 ## Requirements
 
@@ -25,7 +21,7 @@ Currently includes:
 
 ![ezgif-6-a80edb50de90](https://user-images.githubusercontent.com/65565946/126893678-16c7ca8c-70c5-4650-ac71-22cb5a0f0c29.gif)
 
-### Nearest Neighbor Regression
+### Nearest Neighbors
 
 ![ezgif-6-0bbc8378947a](https://user-images.githubusercontent.com/65565946/126893245-51161e51-2012-4b28-b8f6-a127c2cf2d1b.png)
 
