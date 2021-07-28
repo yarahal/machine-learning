@@ -4,11 +4,15 @@ Simple Python implementations of some machine learning algorithms.
 Currently includes:
 
 - Linear Regression
-- Nearest Neighbor Regression
+- Nearest Neighbors
 - Logistic Regression
-- Nearest Neighbor Classification
 - Support Vector Machines
 - Principal Components Analysis
+- Decision Trees
+- Random Forests
+- Gradient Boosting
+- K-Means Clustering
+- Neural Networks
 
 ## Requirements
 

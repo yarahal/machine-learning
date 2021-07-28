@@ -21,4 +21,4 @@ class LinearRegression:
     def predict(self,X):
         m = X.shape[0]
         X = np.concatenate([np.ones((m,1)),X],axis=1)
-        return X @ self.theta
+        return (X @ self.theta).flatten()

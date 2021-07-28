@@ -50,4 +50,4 @@ class SVM:
         for i in range(self.x.shape[0]):
             for j in range(X.shape[0]):
                 K[i,j] = self.__kernel(self.x[i,:],X[j,:])
-        return sign(np.sum(self.alpha*self.y*K,axis=0)+self.b)
+        return np.array(sign(np.sum(self.alpha*self.y.reshape(-1,1)*K,axis=0)+self.b),dtype=int)

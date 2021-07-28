@@ -35,6 +35,7 @@ class LogisticRegression:
     def predict(self,X):
         m = X.shape[0]
         X = np.concatenate([np.ones((m,1)),X],axis=1)
-        if self.n_classes == 2:
-            return sigmoid(X @ self.theta) >= 0.5
-        return self.classes[np.argmax(sigmoid(X @ self.theta),axis=1)]
+        n_classes = len(self.classes)
+        if n_classes == 2:
+            return np.array(sigmoid(X @ self.theta) >= 0.5, dtype=int).flatten()
+        return np.argmax(sigmoid(X @ self.theta),axis=1).flatten()
