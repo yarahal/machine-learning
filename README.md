@@ -1,6 +1,6 @@
 # Machine Learning Algorithms
 
-Simple Python implementations of some machine learning algorithms.
+Python implementations of some machine learning algorithms.
 Currently includes:
 
 - Linear Regression
@@ -10,9 +10,6 @@ Currently includes:
 - Principal Components Analysis
 - Decision Trees
 - Random Forests
-- Gradient Boosting
-- K-Means Clustering
-- Neural Networks
 
 ## Requirements
 
