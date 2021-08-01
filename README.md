@@ -10,6 +10,10 @@ Currently includes:
 - Principal Components Analysis
 - Decision Trees
 - Random Forests
+- Neural Network
+  - Layers: Fully Connected
+  - Activations: ReLU, Sigmoid, Linear
+  - Optimizers: Batch Gradient Descent, Mini Batch Gradient Descent, Stochastic Gradient Descent
 
 ## Requirements
 
@@ -37,5 +41,3 @@ Currently includes:
 ### Decision Tree Classification
 
 ![decision_tree](https://user-images.githubusercontent.com/65565946/127392479-1ede1293-a960-4952-9436-01da748bdeb9.png)
-
-
