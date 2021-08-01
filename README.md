@@ -10,7 +10,7 @@ Currently includes:
 - Principal Components Analysis
 - Decision Trees
 - Random Forests
-- Neural Network
+- Neural Networks
   - Layers: Fully Connected
   - Activations: ReLU, Sigmoid, Linear
   - Optimizers: Batch Gradient Descent, Mini Batch Gradient Descent, Stochastic Gradient Descent
