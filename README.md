@@ -1,6 +1,6 @@
 # Machine Learning Algorithms
 
-Python implementations of some machine learning algorithms.
+Python implementations of some machine learning algorithms. 
 Currently includes:
 
 - Linear Regression
@@ -38,6 +38,11 @@ Currently includes:
 ### Support Vector Machines
 
 ![svm](https://user-images.githubusercontent.com/65565946/127392069-874ac6c7-f859-41b0-8503-263797fa6437.png)
+
+### K-Means Clustering
+
+![output](https://user-images.githubusercontent.com/65565946/128057555-f611d187-2341-4c64-923c-def8a098dd2e.png)
+ing
 
 ### Decision Tree Classification
 
