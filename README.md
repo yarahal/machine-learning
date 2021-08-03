@@ -1,6 +1,6 @@
 # Machine Learning Algorithms
 
-This repository presents basic (not necessarily optimal) implementations of some machine learning algorithms. 
+This repository contains basic (not necessarily optimal) implementations of some machine learning algorithms. 
 Currently includes:
 
 - Linear Regression
