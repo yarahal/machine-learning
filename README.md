@@ -8,6 +8,7 @@ Currently includes:
 - Logistic Regression
 - Support Vector Machines
 - Principal Components Analysis
+- K-Means Clustering
 - Decision Trees
 - Random Forests
 - Neural Networks

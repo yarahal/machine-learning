@@ -13,7 +13,7 @@ class SVM:
         self.d = d
         self.C = C
 
-    def __kernel(self,x,z):
+    def _kernel(self,x,z):
         if(self.kernel=='linear'):
             K = np.inner(x,z)
         elif(self.kernel=='polynomial'):
@@ -30,7 +30,7 @@ class SVM:
         P = np.zeros((m,m))
         for i in range(m):
             for j in range(m):
-                P[i,j] = y[i]*y[j]*self.__kernel(X[i,:],X[j,:])
+                P[i,j] = y[i]*y[j]*self._kernel(X[i,:],X[j,:])
         P = matrix(P)
         q = matrix(-np.ones(m))
         A = matrix(y.reshape(1,m))
@@ -49,5 +49,5 @@ class SVM:
         K = np.zeros((self.x.shape[0],X.shape[0]))
         for i in range(self.x.shape[0]):
             for j in range(X.shape[0]):
-                K[i,j] = self.__kernel(self.x[i,:],X[j,:])
+                K[i,j] = self._kernel(self.x[i,:],X[j,:])
         return np.array(sign(np.sum(self.alpha*self.y.reshape(-1,1)*K,axis=0)+self.b),dtype=int)

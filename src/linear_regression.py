@@ -4,7 +4,7 @@ class LinearRegression:
     def __init__(self,lamda=0):
         self.lamda = lamda
 
-    def __cost_gradient(self,X,j):
+    def _cost_gradient(self,X,j):
         m = X.shape[0]
         return np.sum(((X @ self.theta)-y.reshape(m,1))*np.expand_dims(X[:,j],-1),axis=0)/m + self.lamda/m * self.theta[j]
         
@@ -15,7 +15,7 @@ class LinearRegression:
         gradients = np.zeros((n+1,1))
         for epoch in range(epochs):
             for j in range(n+1):
-                gradients[j] = self.__cost_gradient(X,j)
+                gradients[j] = self._cost_gradient(X,j)
             self.theta = self.theta - alpha * gradients
             
     def predict(self,X):
