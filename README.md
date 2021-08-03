@@ -42,7 +42,6 @@ Currently includes:
 ### K-Means Clustering
 
 ![output](https://user-images.githubusercontent.com/65565946/128057555-f611d187-2341-4c64-923c-def8a098dd2e.png)
-ing
 
 ### Decision Tree Classification
 
