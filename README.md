@@ -1,18 +1,18 @@
 This repository contains basic (not necessarily optimal) implementations of some machine learning algorithms. 
 Currently includes:
 
-- linear regression
-- nearest neighbors
-- logistic regression 
-- support vector machines 
-- principal components analysis 
-- k-means clustering
-- decision trees
-- random forests
-- neural networks
-  - layers: fully connected
-  - activations: ReLU, sigmoid, linear
-  - optimizers: batch gradient descent, mini batch gradient descent, stochastic gradient descent
+- Linear Regression
+- Nearest Neighbors
+- Logistic Regression 
+- Support Vector Machines 
+- Principal Components Analysis 
+- K-Means Clustering
+- Decision Trees
+- Random Forests
+- Neural Networks
+  - Layers: Fully Connected
+  - Activations: ReLU, Sigmoid, Linear
+  - Optimizers: Batch Gradient Descent, Mini Batch Gradient Descent, Stochastic Gradient Descent
 
 ## Requirements
 
@@ -47,6 +47,5 @@ Currently includes:
 
 ## References
 - Stanford CS229 http://cs229.stanford.edu/
-- Stanford CS230 https://cs230.stanford.edu/
-- Elements of Statistical Learning https://web.stanford.edu/~hastie/Papers/ESLII.pdf
-- DeepLearning.AI Specialization on Coursera
+- Elements of Statistical Learning https://web.stanford.edu/~hastie/Papers/ESLII.pd
+- Stanford CS230 https://cs230.stanford.edu/ and DeepLearning.AI Specialization on Coursera
