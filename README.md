@@ -1,3 +1,5 @@
+# Machine Learning
+
 This repository contains basic (not necessarily optimal) implementations of some machine learning algorithms. 
 Currently includes:
 
