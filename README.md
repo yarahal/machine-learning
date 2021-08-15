@@ -3,18 +3,18 @@
 This repository contains basic (not necessarily optimal) implementations of some machine learning algorithms. 
 Currently includes:
 
-- linear regression
-- nearest neighbors
-- logistic regression
-- support vector machines
-- principal components analysis
-- k-means clustering
-- decision trees
-- random forests
-- neural networks
-  - layers: fully connected
-  - activations: ReLU, sigmoid, linear
-  - optimizers: batch gradient descent, mini batch gradient descent, stochastic gradient descent
+- Linear Regression
+- Nearest Neighbors
+- Logistic Regression 
+- Support Vector Machines 
+- Principal Components Analysis 
+- K-Means Clustering
+- Decision Trees
+- Random Forests
+- Neural Networks
+  - Layers: Fully Connected 
+  - Activations: ReLU, Sigmoid, Linear
+  - Optimizers: Batch Gradient Descent, Mini Batch Gradient Descent, Stochastic Gradient Descent 
 
 ## Requirements
 
