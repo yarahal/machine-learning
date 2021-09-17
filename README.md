@@ -1,25 +1,20 @@
 # Machine Learning
 
-This repository contains basic (not necessarily optimal) implementations of some machine learning algorithms. 
+This repository contains basic (not necessarily optimal) pure numpy implementations of some machine learning algorithms.  
 Currently includes:
 
-- Linear Regression
-- Nearest Neighbors
-- Logistic Regression 
-- Support Vector Machines 
-- Principal Components Analysis 
-- K-Means Clustering
-- Decision Trees
-- Random Forests
-- Neural Networks
-  - Layers: Fully Connected 
+- Linear regression
+- Nearest neighbors
+- Logistic regression 
+- Support vector machines 
+- Principal components analysis 
+- K-means clustering
+- Decision trees
+- Random forests
+- Neural networks
+  - Layers: fully connected 
   - Activations: ReLU, Sigmoid, Linear
-  - Optimizers: Batch Gradient Descent, Mini Batch Gradient Descent, Stochastic Gradient Descent 
-
-## Requirements
-
-- numpy==1.21.0
-- cvxopt==1.2.6
+  - Optimizers: batch gradient descent, mini batch gradient descent, stochastic gradient descent 
 
 ## Samples
 
