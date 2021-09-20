@@ -1,19 +1,6 @@
 # Machine Learning
 
-This repository contains basic (not necessarily optimal) pure numpy implementations of some machine learning algorithms. Currently includes:
-
-- Linear regression
-- Nearest neighbors
-- Logistic regression 
-- Support vector machines 
-- Principal components analysis 
-- K-means clustering
-- Decision trees
-- Random forests
-- Neural networks
-  - Layers: fully connected 
-  - Activations: ReLU, Sigmoid, linear
-  - Optimizers: batch gradient descent, mini batch gradient descent, stochastic gradient descent 
+This repository contains basic (not necessarily optimal) pure numpy implementations of some machine learning algorithms. Currently includes linear regression, logistic regression, nearest neighbors, support vector machines, principal components analysis, k-means clustering, decision trees, random forests and fully-connected neural networks.
 
 ## Samples
 
@@ -41,7 +28,6 @@ This repository contains basic (not necessarily optimal) pure numpy implementati
 
 ![decision_tree](https://user-images.githubusercontent.com/65565946/127392479-1ede1293-a960-4952-9436-01da748bdeb9.png)
 
-<!-- ## References
+## References
 - Stanford CS229 http://cs229.stanford.edu/
 - Elements of Statistical Learning https://web.stanford.edu/~hastie/Papers/ESLII.pd
-- Stanford CS230 https://cs230.stanford.edu/ and DeepLearning.AI Specialization on Coursera -->
