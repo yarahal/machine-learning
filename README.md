@@ -27,7 +27,3 @@ This repository contains basic (not necessarily optimal) pure numpy implementati
 #### Decision Tree Classification
 
 ![decision_tree](https://user-images.githubusercontent.com/65565946/127392479-1ede1293-a960-4952-9436-01da748bdeb9.png)
-
-## References
-- Stanford CS229 http://cs229.stanford.edu/
-- Elements of Statistical Learning https://web.stanford.edu/~hastie/Papers/ESLII.pd
