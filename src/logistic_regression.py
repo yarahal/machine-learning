@@ -1,13 +1,12 @@
 import numpy as np
+from utils import sigmoid
 
-def sigmoid(x):
-    return 1/(1+np.exp(-x))
 
 class LogisticRegression:
     def __init__(self,lamda=0):
         self.lamda = lamda
 
-    def _cost_gradient(self,X,j):
+    def _cost_gradient(self,X,y,j):
         m = X.shape[0]
         return np.sum((sigmoid(X @ self.theta)-y.reshape(m,1))*np.expand_dims(X[:,j],-1),axis=0)/m + self.lamda/m * self.theta[j]
     
@@ -19,17 +18,17 @@ class LogisticRegression:
         if self.n_classes == 2:
             self.theta = np.random.rand(n+1,1)
             gradients = np.zeros((n+1,1))
-            for epoch in range(epochs):
+            for _ in range(epochs):
                 for j in range(n+1):
-                    gradients[j] = self._cost_gradient(X,j)
+                    gradients[j] = self._cost_gradient(X,y,j)
                 self.theta = self.theta - alpha * gradients
         else:
-            self.theta = np.random.rand(n+1,n_classes)
-            for k in range(n_classes):
+            self.theta = np.random.rand(n+1,self.n_classes)
+            for k in range(self.n_classes):
                 gradients = np.zeros(n+1)
-                for epoch in range(epochs):
+                for _ in range(epochs):
                     for j in range(n+1):
-                        gradients[j] = self._cost_gradient(X,j)
+                        gradients[j] = self._cost_gradient(X,y,j)
                     self.theta[:,k] = self.theta[:,k] - alpha * gradients
 
     def predict(self,X):

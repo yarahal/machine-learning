@@ -1,11 +1,7 @@
 import numpy as np
 from cvxopt import matrix, solvers
+from utils import sign
 solvers.options['show_progress'] = False
-
-def sign(x):
-    x[x < 0] = -1
-    x[x >= 0] = 1
-    return x
 
 class SVM:    
     def __init__(self,kernel='linear',d=2,C=100):
@@ -19,7 +15,7 @@ class SVM:
         elif(self.kernel=='polynomial'):
             inner_prod = np.inner(x,z)
             K = 1
-            for t in range(self.d-1):
+            for _ in range(self.d-1):
                 K += inner_prod
                 inner_prod *= inner_prod
         return K

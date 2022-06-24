@@ -1,7 +1,5 @@
 import numpy as np
-
-def euclidean_distance(p1,p2):
-    return np.sum((p1-p2)**2)
+from utils import euclidean_distance
 
 class KNNClassification:
     def __init__(self,k=3):

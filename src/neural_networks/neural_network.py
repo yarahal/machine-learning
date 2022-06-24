@@ -25,7 +25,7 @@ class NeuralNetwork:
             dA_l = self.layers[l]._layer_backward_propagation(dA_l)
     
     def fit(self,X,y,epochs=10,alpha=0.01,batch_size=None):
-        for epoch in range(epochs):
+        for _ in range(epochs):
             self.optimizer.run(X,y,alpha,self.layers,self._forward_propagation,self._backward_propagation) 
 
     def predict(self,X):

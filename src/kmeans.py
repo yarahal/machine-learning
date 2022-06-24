@@ -1,7 +1,5 @@
 import numpy as np
-
-def euclidean_distance(p1,p2):
-    return np.sum((p1-p2)**2)
+from utils import euclidean_distance
 
 class KMeansClustering:
     def __init__(self,n_clusters):
@@ -11,7 +9,7 @@ class KMeansClustering:
         m = X.shape[0]
         self.cluster_centroids = X[np.random.choice(np.arange(0,m,1),size=self.n_clusters,replace=False),:]
         c = np.zeros(m)
-        for it in range(itr):
+        for _ in range(itr):
             for i in range(m):
                 min_distance = euclidean_distance(self.cluster_centroids[0,:],X[i,:]) 
                 for j in range(self.n_clusters):
@@ -21,6 +19,7 @@ class KMeansClustering:
                         min_distance = curr_distance
             for j in range(self.n_clusters):
                 self.cluster_centroids[j,:] = np.mean(X[(c==j)],axis=0)
+            yield c, self.cluster_centroids
 
     def predict(self,X):
         m = X.shape[0]

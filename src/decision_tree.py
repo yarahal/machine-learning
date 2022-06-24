@@ -27,10 +27,10 @@ class ClassificationDecisionTree:
         
     def _split(self,X_js,y_js,d,current_node):
         m, n = X_js.shape[0], X_js.shape[1]
-        j_best, s_best = 0, np.random.choice(np.unique(X[:,0]))
+        j_best, s_best = 0, np.random.choice(np.unique(X_js[:,0]))
         min_criterion = self._criterion(j_best,s_best,X_js,y_js)
         for j in range(n):
-            for s in np.unique(X[:,j]):
+            for s in np.unique(X_js[:,j]):
                 criterion = self._criterion(j,s,X_js,y_js)
                 if  criterion < min_criterion:
                     j_best, s_best = j, s
@@ -78,10 +78,10 @@ class RegressionDecisionTree:
         
     def _split(self,X_js,y_js,d,current_node):
         m, n = X_js.shape[0], X_js.shape[1]
-        j_best, s_best = 0, np.random.choice(np.unique(X[:,0]))
+        j_best, s_best = 0, np.random.choice(np.unique(X_js[:,0]))
         min_criterion = self._criterion(j_best,s_best,X_js,y_js)
         for j in range(n):
-            for s in np.unique(X[:,j]):
+            for s in np.unique(X_js[:,j]):
                 criterion = self._criterion(j,s,X_js,y_js)
                 if  criterion < min_criterion:
                     j_best, s_best = j, s

@@ -12,8 +12,8 @@ Currently includes:
 - Decision Trees
 - Random Forests
 - Neural Networks
-  - Layers: Fully Connected
-  - Activations: ReLU, Sigmoid, Linear
+  - Layers: Fully Connected, 2D Convolutional
+  - Activations: ReLU, Sigmoid, Linear, Softmax
   - Optimizers: Batch Gradient Descent, Mini Batch Gradient Descent, Stochastic Gradient Descent
 
 ## Requirements
