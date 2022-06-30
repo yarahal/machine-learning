@@ -1,5 +1,7 @@
 import numpy as np
-from activations import Linear
+from neural_networks.activations import Linear
+
+from math import sqrt
 
 class FC:
     def __init__(self,n,activation=Linear()):

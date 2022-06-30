@@ -16,7 +16,7 @@ class KNNClassification:
             k_closest_points = sorted_points[:self.k]
             counts = {}
             for point in k_closest_points:
-                counts[point[1]] = counts[point[1]] + 1 if point[1] in counts else 0
+                counts[point[1]] = counts[point[1]] + 1 if point[1] in counts else 1
             y_pred.append(max(counts,key=lambda label: counts[label]))
         return np.array(y_pred)
 

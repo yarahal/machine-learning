@@ -1,8 +1,7 @@
 import numpy as np
-from optimizers import BatchGradientDescent
 
 class NeuralNetwork:
-    def __init__(self,loss=None,optimizer=BatchGradientDescent()):
+    def __init__(self,loss=None,optimizer=None):
         self.layers = []
         self.n = []
         self.loss = loss
@@ -24,12 +23,15 @@ class NeuralNetwork:
         for l in range(L-1,-1,-1):
             dA_l = self.layers[l]._layer_backward_propagation(dA_l)
     
-    def fit(self,X,y,epochs=10,alpha=0.01,batch_size=None):
+    def fit(self,X,y,epochs=10,alpha=0.01):
         for _ in range(epochs):
             self.optimizer.run(X,y,alpha,self.layers,self._forward_propagation,self._backward_propagation) 
 
-    def predict(self,X):
+    def predict_proba(self,X):
         return self._forward_propagation(X).flatten()   
+
+    def predict(self,X):
+        return np.array(self._forward_propagation(X).flatten() >= 0.5,dtype=int)
         
                 
 

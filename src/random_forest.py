@@ -1,5 +1,5 @@
 import numpy as np
-from decision_trees import ClassificationDecisionTree, RegressionDecisionTree
+from decision_tree import ClassificationDecisionTree, RegressionDecisionTree
 
 class RandomForestClassification:
     def __init__(self,n_trees=100,max_depth=None,min_samples_split=1,max_features=None,p_samples=1):

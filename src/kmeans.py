@@ -18,7 +18,7 @@ class KMeansClustering:
                         c[i] = j
                         min_distance = curr_distance
             for j in range(self.n_clusters):
-                self.cluster_centroids[j,:] = np.mean(X[(c==j)],axis=0)
+                self.cluster_centroids[j,:] = np.mean(X[(c==j),:],axis=0)
             yield c, self.cluster_centroids
 
     def predict(self,X):
