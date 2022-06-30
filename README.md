@@ -1,6 +1,6 @@
 # Machine Learning
 
-This repository contains basic (not necessarily optimal) pure numpy implementations of some machine learning algorithms. 
+This repository contains basic (not necessarily optimal) pure numpy implementations of some machine learning algorithms.
 
 <!-- Currently includes linear regression, logistic regression, nearest neighbors, support vector machines, principal components analysis, k-means clustering, decision trees, random forests and neural networks (fully-connected and convolutional layers). -->
 
@@ -23,7 +23,6 @@ This repository contains basic (not necessarily optimal) pure numpy implementati
 
 ![output](figures/pca.png)
 
-
 ##### [K-Means Clustering](src/kmeans.py)
 
 ![output](figures/kmeans.png)
@@ -41,11 +40,11 @@ This repository contains basic (not necessarily optimal) pure numpy implementati
 ##### [Neural Networks](src/neural_networks)
 
 ```python
-from neural_networks.neural_network import NeuralNetwork 
-from neural_networks.losses import BinaryCrossEntropy 
+from neural_networks.neural_network import NeuralNetwork
+from neural_networks.losses import BinaryCrossEntropy
 from neural_networks.activations import ReLU, Sigmoid
 from neural_networks.optimizers import SGD
-from neural_networks.layers import FC, Conv2D
+from neural_networks.layers import FC
 
 # generate data
 m = 512
@@ -72,8 +71,5 @@ plot_decision_boundary_2d(network,X,y,t=True)
 plt.title(f'Neural Network Decision Boundary - {n_epochs} Epochs, Learning Rate = {lr}')
 plt.savefig('figures/nnclass');
 ```
+
 ![neural_networks](figures/nnclass.png)
-
-
-
-
