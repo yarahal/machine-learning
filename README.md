@@ -40,8 +40,8 @@ This repository contains basic (not necessarily optimal) pure numpy implementati
 ##### [Neural Networks](src/neural_networks)
 
 ```python
-from neural_networks.neural_network import NeuralNetwork
-from neural_networks.losses import BinaryCrossEntropy
+from neural_networks.neural_network import NeuralNetwork 
+from neural_networks.losses import BinaryCrossEntropy 
 from neural_networks.activations import ReLU, Sigmoid
 from neural_networks.optimizers import SGD
 from neural_networks.layers import FC
@@ -63,8 +63,8 @@ network.add_layer(FC(100,ReLU()))
 network.add_layer(FC(1,Sigmoid()))
 
 # fit network
-n_epochs= 300
-lr = 0.01
+n_epochs= 100
+lr = 1e-3
 network.fit(X,y,n_epochs,lr)
 
 plot_decision_boundary_2d(network,X,y,t=True)
