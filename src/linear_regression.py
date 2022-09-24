@@ -1,25 +1,25 @@
 import numpy as np
 
 class LinearRegression:
-    def __init__(self,lamda=0):
-        self.lamda = lamda
-
-    def _cost_gradient(self,X,y,j):
-        m = X.shape[0]
-        return np.sum(((X @ self.theta)-y.reshape(m,1))*np.expand_dims(X[:,j],-1),axis=0)/m + self.lamda/m * self.theta[j]
+    def __init__(self,l2_parm=0):
+        self.l2_parm = l2_parm
         
-    def fit(self,X,y,alpha=0.001,epochs=100):
+    def fit(self,X,y,learning_rate=0.001,epochs=100):
         m, n = X.shape[0], X.shape[1]
+        # add ones for bias term
         X = np.concatenate([np.ones((m,1)),X],axis=1)
+        # initialize weights
         self.theta = np.random.rand(n+1,1)
+        # initialize gradient vector
         gradients = np.zeros((n+1,1))
         for _ in range(epochs):
-            for j in range(n+1):
-                gradients[j] = self._cost_gradient(X,y,j)
-            self.theta = self.theta - alpha * gradients
+            gradients = -1/m * (X.transpose() @ (y - X @ self.theta) + self.l2_parm * np.sum(self.theta[1:,0]))
+            self.theta = self.theta - learning_rate * gradients
             yield X @ self.theta, self.theta
             
     def predict(self,X):
         m = X.shape[0]
+        # add ones for bias term
         X = np.concatenate([np.ones((m,1)),X],axis=1)
-        return (X @ self.theta).flatten()
+        y_pred = X @ self.theta
+        return y_pred

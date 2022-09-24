@@ -1,10 +1,9 @@
 import numpy as np
 from utils import sigmoid
 
-
 class LogisticRegression:
-    def __init__(self,lamda=0):
-        self.lamda = lamda
+    def __init__(self,l2_parm=0):
+        self.l2_parm = l2_parm
 
     def _cost_gradient(self,X,y,j):
         m = X.shape[0]
