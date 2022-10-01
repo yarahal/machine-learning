@@ -350,7 +350,7 @@ plt.savefig('figures/forestclass')
 
 ![random_forest](figures/forestclass.png)
 
-##### [Neural Networks](src/neural_networks)
+### Feedforward Neural Network
 
 ```python
 from neural_networks.neural_network import NeuralNetwork 
