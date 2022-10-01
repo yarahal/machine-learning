@@ -13,7 +13,7 @@ class LinearRegression:
         # initialize gradient vector
         gradients = np.zeros((n+1,1))
         for _ in range(epochs):
-            gradients = -1/m * (X.transpose() @ (y - X @ self.theta) + self.l2_parm * np.sum(self.theta[1:,0]))
+            gradients = 1/m * (-X.transpose() @ (y - X @ self.theta) + self.l2_parm * np.sum(self.theta[1:,0]))
             self.theta = self.theta - learning_rate * gradients
             yield X @ self.theta, self.theta
             

@@ -11,9 +11,9 @@ class SVM:
 
     def _kernel(self,x,z):
         if(self.kernel=='linear'):
-            K = np.inner(x,z)
+            K = x.transpose() @ z
         elif(self.kernel=='polynomial'):
-            inner_prod = np.inner(x,z)
+            inner_prod = x.transpose() @ z
             K = 1
             for _ in range(self.d-1):
                 K += inner_prod
