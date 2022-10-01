@@ -1,6 +1,6 @@
 # Machine Learning
 
-This repository contains pure numpy implementations of some machine learning algorithms.
+This repository contains pure numpy implementations of some machine learning algorithms (written for educational purposes).
 
 ## Contents
 - [linear_regression](src/linear_regression.py): linear regression with ridge penalty
